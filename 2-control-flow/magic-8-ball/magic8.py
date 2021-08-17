@@ -27,6 +27,12 @@ elif random_number == 9:
   answer = "Very doubtful"
 else:
   answer = "Error"
-  
-print(name + " asks: " + question)
-print("Magic 8 Ball's answer: " + answer)
+
+if question == "":
+  print("The Magic 8-Ball cannot provide a fortune unless you ask it something.")
+elif name == "":
+  print("Question: " + question)
+  print("Magic 8-Ball's answer: " + answer)
+else:
+  print(name + " asks: " + question)
+  print("Magic 8-Ball's answer: " + answer)
